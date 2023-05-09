@@ -3,11 +3,11 @@ function setup() {
   cnv.parent("cnv")
   engine = Engine.create();
   world = engine.world;
-  grounds.push(new Boundary(0, height / 2, 10, height));
-  grounds.push(new Boundary(width, height / 2, 10, height));
-  grounds.push(new Boundary(200, 0, width, 10));
-  grounds.push(new Boundary(200, height, width, 10));
-  World.add(world, grounds);
+  grds.push(new Boundary(0, height / 2, 10, height));
+  grds.push(new Boundary(width, height / 2, 10, height));
+  grds.push(new Boundary(200, 0, width, 10));
+  grds.push(new Boundary(200, height, width, 10));
+  World.add(world, grds);
 
   let mouse = Mouse.create(canvas.elt);
   mouse.pixelRatio = pixelDensity() // for retina displays etc
