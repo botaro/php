@@ -18,15 +18,7 @@
 <script src=js/ani.js></script>
 
 <script src=p5/ini.js></script>
-<?php 
-if(isset($_GET["but"])){
-$but=$_GET["but"];
-}else{
-$but=0;
-}
 
-if($but==0){include "par/p0.php";}
-if($but==1){include "par/p1.php";}
-if($but==2){include "par/p2.php";}
+<?php include "par/but.php" ?>
 
-?>
+
