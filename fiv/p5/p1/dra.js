@@ -1,6 +1,6 @@
 function draw() {
   background(51);
-    print (frameCount);
+//print (frameCount);
   if (frameCount % 5 === 0 && frameCount<100) {
     let size = random(sizes);
 

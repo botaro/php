@@ -14,8 +14,8 @@ var T1, T2, T3, T4, T5;
 var FT1, FT2, FT3, FT4, FT5;
 var ball;
 var screw1, screw2, screw3, screw4, screw5, screw6, screw7, screw8, screw9, screw10;
-var paddle1, paddle2;
-var paddle1State, paddle2State;
+var pad1, pad2;
+var pad1State, pad2State;
 
 var charge;
 var gamestate;
