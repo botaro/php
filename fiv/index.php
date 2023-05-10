@@ -8,7 +8,6 @@
 <body> 
 <?php include "par/ani.php"; ?>
 <?php include "par/sel.php"; ?>
-<?php include "par/img.php"; ?>
 
 <div class=container-fluid><div class="text-center row">
 

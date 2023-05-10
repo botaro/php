@@ -1,0 +1,2 @@
+
+echo $NODE_PATH

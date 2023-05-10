@@ -5,9 +5,9 @@ p=Tmsm2010
 f=ftp://89.117.27.66
 
 lftp -u$u,$p $f  -e"\
-    cd pwiz
 pwd
 ls
+lcd ..
 lpwd
 exit
 "

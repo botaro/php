@@ -1,0 +1,46 @@
+let na1=crE("nav")
+apC(row,na1)
+//clA(u1,"fixed-top")
+// let ta1=crE("div")
+// apC(na1,ta1)
+// clA(ta1,"container-fluid")
+
+let u1=crE("ul")
+apC(na1,u1)
+clA(u1,"navbar-nav")
+clA(u1,"d-flex")
+clA(u1,"flex-row")
+clA(u1,"p-2")
+clA(u1,"bg-dark")
+let t1=crT("\u00A0")
+
+let l1=crE("li")
+apC(u1,l1)
+clA(l1,"nav-item")
+
+let a1=crE("a")
+apC(l1,a1)
+stA(a1,"href","#c1")
+clA(a1,"nav-link")
+inH(a1,"c1\u00A0")
+
+let l2=crE("li")
+apC(u1,l2)
+clA(l2,"nav-item")
+
+let a2=crE("a")
+apC(l2,a2)
+stA(a2,"href","#c2")
+clA(a2,"nav-link")
+inH(a2,"c2\u00A0")
+
+let l3=crE("li")
+apC(u1,l3)
+clA(l3,"nav-item")
+
+let a3=crE("a")
+apC(l3,a3)
+stA(a3,"href","#c3")
+clA(a3,"nav-link")
+inH(a3,"c3\u00A0")
+

@@ -3,6 +3,7 @@ function setup() {
   cnv.parent("cnv")
   engine = Engine.create();
   world = engine.world;
+
   grds.push(new Boundary(0, height / 2, 10, height));
   grds.push(new Boundary(width, height / 2, 10, height));
   grds.push(new Boundary(200, 0, width, 10));
