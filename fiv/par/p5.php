@@ -1,3 +1,3 @@
 
-<script src=mat/p5/ske.js></script>
+<script src=pub/mat/p5/ske.js></script>
 

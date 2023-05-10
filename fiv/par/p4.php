@@ -1,2 +1,2 @@
-<script src=mat/p4/ske.js></script>
+<script src/=pub/mat/p4/ske.js></script>
 
