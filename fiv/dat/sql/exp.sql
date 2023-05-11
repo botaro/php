@@ -1,1 +1,1 @@
-.mode csv .output res/nb.csv select * from php .quit
+.mode csv .output res/nb.csv select * from usr .quit

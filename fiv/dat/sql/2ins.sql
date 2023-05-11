@@ -1,6 +1,6 @@
-insert into php(
+insert into usr(
 email,
-php,
+usr,
 mnt,
 buy,
 ite

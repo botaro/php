@@ -1,2 +1,2 @@
 .mode csv 
-.import csv/php.csv php
+.import csv/usr.csv usr

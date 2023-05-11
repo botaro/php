@@ -1,2 +1,2 @@
-delete from php where type="net";
+delete from usr where type="net";
 

@@ -14,5 +14,7 @@ if($but==5){include "par/p5.php";}
 if($but==6){include "par/p6.php";}
 if($but==7){include "par/p7.php";}
 if($but==8){include "par/p8.php";}
+if($but==9){include "par/p9.php";}
+if($but==10){include "par/p10.php";}
 
 ?>

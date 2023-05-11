@@ -1,55 +1,34 @@
-Matter.use('matter-wrap');
-
-let ball1;
-let ball2;
-let propeller;
-let angle = 0;
-
+let engine;
+let balls;
+let boxes;
+let grd;
+let mouse;
 
 function setup() {
-  const canvas = createCanvas(800, 600);
+  const canvas = createCanvas(w, h);
 
-  // create an engine
-  const engine = Matter.Engine.create();
-  const world = engine.world;
+  let engine = Matter.Engine.create();
+  let world = engine.world;
 
-  // two balls
-  const wrap = {
-    min: { x: 0, y: 0 },
-    max: { x: width, y: height }
-  };
-  ball1 = new Ball(world,
-    { x: 400, y: 50, r: 25, color: 'white' },
-    { density: 0.01, plugin: { wrap: wrap } }
-  );
-  ball2 = new Ball(world,
-    { x: 200, y: 50, r: 150, color: 'white' },
-    { density: 0.0001, plugin: { wrap: wrap } }
-  );
+  // add stacks
+  boxes = new Stack(world, {
+    x: 200, y: 0, cols: 3, rows: 10, colGap: 3, rowGap: 3, color: 'white',
+    create: (x, y) => Matter.Bodies.rectangle(x, y, 50, 50)
+  });
+  balls = new Stack(world, {
+    x: 150, y: 0, cols: 3, rows: 10, colGap: 3, rowGap: 3, color: 'white',
+    create: (x, y) => Matter.Bodies.circle(x, y, 25, { restitution: 1 })
+  });
 
-  // propeller
-  propeller = new Block(world,
-    { x: 400, y: 300, w: 550, h: 30, color: 'white' },
-    { isStatic: true, angle: angle }
-  );
-
-  // setup mouse
+grd = new Block(world, { x: 140, y: height-150, w: w, h: 50, color: 'grey' }, {isStatic: true });
   mouse = new Mouse(engine, canvas);
-
-  // run the engine
   Matter.Runner.run(engine);
 }
 
 function draw() {
-  background(0);
-
-  // animate angle property of propeller
-  Matter.Body.setAngle(propeller.body, angle);
-  Matter.Body.setAngularVelocity(propeller.body, 0.15);
-  angle += 0.07;
-
-  propeller.draw();
-  ball1.draw();
-  ball2.draw();
+  background('black');
+  boxes.draw();
+  balls.draw();
+  grd.draw();
   mouse.draw();
 }

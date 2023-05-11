@@ -1,1 +1,1 @@
-drop table bib;
+drop table usr;

@@ -1,1 +1,1 @@
-select title from php; 
+select title from usr; 

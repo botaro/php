@@ -1,56 +1,36 @@
-Matter.use('matter-wrap');
+let box;
+let boxImg;
+let ball;
+let balImg;
+let ground;
+let mouse;
 
-let ball1;
-let ball2;
-let elevator;
+function preload() {
+  balImg = loadImage(i430)
+  boxImg = loadImage(i431)
 
+}
 
 function setup() {
-  const canvas = createCanvas(800, 600);
+  const canvas = createCanvas(w, h);
 
-  // create an engine
-  const engine = Matter.Engine.create();
-  const world = engine.world;
-
-  // two balls
-  const wrap = {
-    min: { x: 0, y: 0 },
-    max: { x: width, y: height }
-  };
-  ball1 = new Ball(world,
-    { x: 400, y: 50, r: 25, color: 'white' },
-    { frictionAir: 0.1, plugin: { wrap: wrap } }
-  );
-  ball2 = new Ball(world,
-    { x: 200, y: 50, r: 150, color: 'white' },
-    { frictionAir: 0.3, plugin: { wrap: wrap } }
+  let engine = Matter.Engine.create();
+  let world = engine.world;
+  box = new Block(world, { x: 200, y: 200, w: 64, h: 64, image: boxImg});
+  ball = new Ball(world, { x: 100, y: 50, r: 45, image: balImg});
+  ground = new Block(world,
+    { x: 200, y: 500, w: w-20, h: 20, color: 'white'},
+    { isStatic: true, angle: Math.PI * 0.06 }
   );
 
-  // elevator
-  elevator = new Block(world,
-    { x: 400, y: 300, w: 550, h: 50, color: 'grey' },
-    { isStatic: true }
-  );
-
-  // setup mouse
   mouse = new Mouse(engine, canvas);
-
-  // run the engine
   Matter.Runner.run(engine);
 }
 
 function draw() {
   background(0);
-
-  // move the elevator up and down
-  let swingY = height/2 + sin(frameCount * 0.2) * 100;
-  Matter.Body.setPosition(
-    elevator.body,
-    {x: elevator.body.position.x, y: swingY}
-  );
-
-  ball1.draw();
-  ball2.draw();
-  elevator.draw();
+  box.draw();
+  ball.draw();
+  ground.draw();
   mouse.draw();
 }

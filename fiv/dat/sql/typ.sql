@@ -1,1 +1,1 @@
-select distinct(type) from php order by type asc;  
+select distinct(type) from usr order by type asc;  

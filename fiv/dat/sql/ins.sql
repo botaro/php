@@ -1,7 +1,7 @@
-insert into php(
+insert into usr(
 typ,ter,tit,bod
 )values(
-"php","sqlite3","$db=new SQLite3($dbn);","$r=$db->query($q);"
+"usr","sqlite3","$db=new SQLite3($dbn);","$r=$db->query($q);"
 );
 
 

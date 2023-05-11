@@ -18,7 +18,6 @@
 
 <script src=pub/js/ini.js></script>
 
-<script src=pub/p5/ini.js></script>
 
 <?php include "par/but.php" ?>
 

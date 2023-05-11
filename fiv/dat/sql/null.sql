@@ -1,1 +1,1 @@
-select rowid from php where type is null or type="";
+select rowid from usr where type is null or type="";

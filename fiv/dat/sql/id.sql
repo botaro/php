@@ -1,1 +1,1 @@
-select rowid from php order by rowid asc; 
+select rowid from usr order by rowid asc; 

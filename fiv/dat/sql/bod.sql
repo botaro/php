@@ -1,1 +1,1 @@
-select rowid,body from php; 
+select rowid,body from usr; 

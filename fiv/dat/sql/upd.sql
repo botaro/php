@@ -1,1 +1,1 @@
-update php set body="";
+update usr set body="";

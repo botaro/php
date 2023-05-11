@@ -1,1 +1,1 @@
-select * from php;
+select * from usr;
