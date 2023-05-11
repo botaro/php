@@ -2,12 +2,12 @@
 <script src=pub/js/hd.js></script>
 
 <head>
-<?php include "par/hd.php"; ?>
+<?php include "vie/hd.php"; ?>
 </head>
 
 <body> 
-<?php include "par/ani.php"; ?>
-<?php include "par/sel.php"; ?>
+<?php include "vie/ani.php"; ?>
+<?php include "vie/sel.php"; ?>
 
 <div class=container-fluid><div class="text-center row">
 
@@ -17,8 +17,8 @@
 </body>
 
 <script src=pub/js/ini.js></script>
+<?php include "vie/but.php" ?>
 
 
-<?php include "par/but.php" ?>
 
 
