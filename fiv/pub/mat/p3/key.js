@@ -1,4 +1,4 @@
-function mousePressed() {
+function mouseClicked() {
 
 let opt={friction: 0  }
 // matter.makeBall(5, 5, random(30, 60),opt )

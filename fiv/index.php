@@ -11,14 +11,25 @@
 
 <div class=container-fluid><div class="text-center row">
 
-<div id=cnv></div>
+<?php 
+if(isset($_GET["but"] )){
+$but=$_GET["but"];
+if( $but!=0){ include "vie/cnv.php";
+
+include "vie/pla.php";
+}else{ include "vie/noc.php";}
+}else{ include "vie/top.php";}
+
+
+?>
+
 
 </div></div>
 </body>
 
 <script src=pub/js/ini.js></script>
+
+
 <?php include "vie/but.php" ?>
-
-
 
 

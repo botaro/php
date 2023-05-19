@@ -1,59 +1,30 @@
-// Example based on https://www.youtube.com/watch?v=urR596FsU68
-let world;
-let boxes = [];
-let cirs = [];
-let grds = [];
-let mConstraint;
-let count = 0;
-let sizes = [5, 10, 20, 30, 40];
-
+let tur=0,key=0,sto=0
+let lef=[],mid=[],rig=[]
+let ln=0,mn=0,rn=0
+let fr=10,tim=20,j=0
+let fet=[],col=[]
+// let loo=false
+ 
 function setup() {
-  cnv= createCanvas(w*4/5, h*4/5);
-  cnv.parent("cnv")
-  engine = Engine.create();
-  world = engine.world;
-  grds.push(new Boundary(0, height / 2, 10, height));
-  grds.push(new Boundary(width, height / 2, 10, height));
-  grds.push(new Boundary(200, 0, width, 10));
-  grds.push(new Boundary(200, height, width, 10));
-  World.add(world, grds);
+    cnv=createCanvas(w-20,h-120)
+    cnv.parent("cnv")
 
-  let mouse = Mouse.create(canvas.elt);
-  mouse.pixelRatio = pixelDensity() // for retina displays etc
-  let options = {
-    mouse: mouse
-  }
-  mConstraint = MouseConstraint.create(engine, options);
-  World.add(world, mConstraint);
+    frameRate(fr) 
+    crN()
+cl(lef[0].i)
+    crCol()
+//noLoop()
 }
 
-
-function draw() {
-  background(51);
-    print (frameCount);
-  if (frameCount % 5 === 0) {
-    let size = random(sizes);
-    if (random() < 0.5) {
-      boxes.push(new Box(width / 2, 80, size, size));
-    } else {
-      cirs.push(new Circle(width / 2, 80, size / 2));
-    }
-  }
-
-  Engine.update(engine);
-  for (let box of boxes)box.show();
-  for (let circle of cirs)circle.show();
-  for (let ground of grds)ground.show();
-  
-if(frameCount>200) noLoop()
-
+function draw(){
+background(0)
+j++
+if(frameCount<20){
+Beg()}else{Dis()
 }
+Tim()
 
-// function mouseDragged() {
-//   let size = random(sizes);
-//   if (random() < 0.5) {
-//     boxes.push(new Box(mouseX, mouseY, size, size));
-//   } else {
-//     cirs.push(new Circle(mouseX, mouseY, size / 2));
-//   }
-// }
+}  
+ 
+
+

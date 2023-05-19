@@ -1,9 +1,16 @@
-<script src=pub/p5/ini.js></script>
-<script src=pub/p5/p1/ini.js></script>
-<script src=pub/p5/p1/dar.js></script>
-<script src=pub/p5/p1/box.js></script>
-<script src=pub/p5/p1/cir.js></script>
-<script src=pub/p5/p1/set.js></script>
-<script src=pub/p5/p1/dra.js></script>
+
+<script src=pub/p5/p1/pre.js></script>
+<script src=pub/p5/p1/jud.js></script>
+<script src=pub/p5/p1/ske.js></script>
+<script src=pub/p5/p1/crI.js></script>
+<script src=pub/p5/p1/dii.js></script>
+<script src=pub/p5/p1/mou.js></script>
+<script src=pub/p5/p1/but.js></script>
+<script src=pub/p5/p1/beg.js></script>
+<script src=pub/p5/p1/fet.js></script>
+<script src=pub/p5/p1/col.js></script>
+<script src=pub/p5/p1/crf.js></script>
+<script src=pub/p5/p1/big.js></script>
+<script src=pub/p5/p1/tim.js></script>
 
 

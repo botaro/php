@@ -38,7 +38,7 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function mouseClicked() {
   balls.push(matter.makeBall(mouseX, mouseY, random(30, 60), {
     friction: 0
   }));

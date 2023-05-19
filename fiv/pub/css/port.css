@@ -1,5 +1,17 @@
 @viewport {  
-   orientation: portrait;  
+   orientation:landscape;  
  }  
 
 touch-action: manipulation;
+
+@media all and (orientation: landscape) {
+    article {
+        -webkit-column-count : 2;
+        column-count         : 2;
+    }
+
+h1 {
+        -webkit-column-span  : all;
+        column-span          : all;
+    }
+}
